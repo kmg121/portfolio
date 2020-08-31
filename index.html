@@ -2,12 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>1!SENEITIVE</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>1!SENSITIVE</title>
     <STYLE>
+
+        a { text-decoration: none;
+            color: #f0f0f0;}
         body{
             padding: 0;
             margin: 0;
+            color: #f0f0f0;
+            line-height: text size;
+            font-family: "Noto Sans CJK KR Light";
         }
+
+        .gnb{
+            margin-top: 0;
+            position: fixed;
+            width: 100vw;
+            height: 50px;
+            z-index: 9999;
+        }
+        .gnb_bg{
+            background-color: #000000;
+            opacity: 0;
+            position: fixed;
+            z-index: -9999;
+            width: 100vw;
+            height: 50px;
+            margin-top: -16px;
+        }
+        .gnb li{
+            list-style: none;
+            float: left;
+            line-height: 14pt;
+            margin-right: 40px;
+            font-weight: bold;
+
+        }
+        .gnb a{color: #c5c5c5;            transition: all 0.2s ease-in-out;
+        }
+        .gnb a:hover{
+            color: #ffffff;
+            transition: all 0.2s ease-in-out;
+
+        }
+        .logo {
+            line-height: 14pt;
+            font-weight: bolder;
+            position: absolute;
+            left: 50%;
+            width: 140px;
+            margin-left: -70px;
+            cursor: default;
+            font-size: 16pt;
+            text-align: center;
+
+        }
+        .clear{
+            clear: both;}
         .wrap{
             background-image: url("img/bg.jpg");
             background-size: cover;
@@ -22,18 +75,243 @@
             background-repeat: no-repeat;
             background-position: center;
             height: 100vh;
+
+        }
+        .con{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 1960px;
+        }
+        .con1{
+            padding-top: 0px;
+            width: 1120px;
+
+            position:absolute;
+            left:50%;
+            margin-left:-565px;
+        }
+        .con1>div{
+            float: left;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        .thumbnail{
+            width: 550px;
+            height: 380px;
+            background-size: cover;
+            background-position: center;
+        }
+        .thumbnail:hove{
+            width: 550px;
+            height: 380px;
+            opacity: 0.8;
+            background-position: center;
+            background-color: #000;
+        }
+
+        .dark{
+            width: inherit;
+            height: 480px;
+            background-color: #000000;
+            position: relative;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        .dark:hover{
+            opacity: 0.4;
+            transition: all 0.2s ease-in-out;
+
+        }
+
+        .con1_1 .thumbnail{
+            background-image: url("img/thumbnail/1.jpg");
+        }
+        .con1_2 .thumbnail{
+            background-image: url("img/thumbnail/2.jpg");
+        }
+        .con1_3 .thumbnail{
+            background-image: url("img/thumbnail/3.jpg");
+        }
+        .con1_4 .thumbnail{
+            background-image: url("img/thumbnail/4.png");
+        }
+        .con1_5 .thumbnail{
+            background-image: url("img/thumbnail/5.jpg");
+        }
+        .con1_6 .thumbnail{
+            background-image: url("img/thumbnail/6.jpg");
+        }
+        .con1_7 .thumbnail{
+            background-image: url("img/thumbnail/7.jpg");
+        }
+        .caption{
+            height: 100px;
+            width: 550px;
+            background-color: rgba(0, 0, 0, 0.53);
+            text-align: center;
+            padding-top: 3px;
+            box-sizing: border-box;
+        }
+        .caption p:nth-child(2){
+            margin-top: -18px;
+            color: #aaaaaa;
+            font-size: 12pt;
+        }
+        .caption p:nth-child(1){
+
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        .con1{
+
         }
 
     </STYLE>
 </head>
 <body>
+<div class="gnb">
+
+    <ul>
+        <li>
+            <a href="#work" class="work">WORK</a>
+        </li>
+
+        <li>
+            <a href="info.html">INFO</a>
+        </li>
+
+        <div class="logo">1!SENSITIVE</div>
+
+    </ul>
+    <div class="gnb_bg">
+    </div>
+
+
+</div>
+
+<SCRIPT>
+    $(window).ready(function(){
+
+        var max = 1000;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
+
+    $('a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
+    });
+
+</SCRIPT>
+
 <div class="wrap">
+
+
+
     <div class="center">
 
     </div>
-    <div class="con1">
-        
+    <div class="con">
+    <div class="con1" id="work">
+
+        <div class="con1_1"><a href="con1_1.html">
+            <div class="thumbnail">
+                <div class="dark"></div>
+            </div>
+            <div class="caption">
+                <p>[UX / UI Design]</p>
+                <p>Ottogi website redesign</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="con1_2"><a href="con1_2.html">
+            <div class="thumbnail"> <div class="dark"></div> </div>
+            <div class="caption">
+                <p>[Promotion Design]</p>
+                <p>Jukdo beach, Yangyang promotion design</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="con1_3"><a href="con1_3.html">
+            <div class="thumbnail"> <div class="dark"></div> </div>
+            <div class="caption">
+                <p>[Editorial]</p>
+                <p>Josef Müller-Brockmann</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="con1_4"><a href="con1_4.html">
+            <div class="thumbnail"><div class="dark"></div>  </div>
+            <div class="caption">
+                <p>[Motion graphics]</p>
+                <p>ADOBE Motion graphics</p>
+            </div>
+        </a>
+        </div>
+        <div class="con1_5"><a href="con1_5.html">
+            <div class="thumbnail"> <div class="dark"></div> </div>
+            <div class="caption">
+                <p>[YouTube content]</p>
+                <p>Where does the assignment come from</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="con1_6"><a href="con1_6.html">
+            <div class="thumbnail"> <div class="dark"></div> </div>
+            <div class="caption">
+                <p>[Motion graphics]</p>
+                <p>Tame Impala - Feels Like We Only Go Backwards</p>
+            </div>
+        </a>
+        </div>
+
+        <div class="con1_7"><a href="con1_7.html">
+            <div class="thumbnail"> <div class="dark"></div> </div>
+            <div class="caption">
+                <p>[Graphic Design]</p>
+                <p>2019 ~ 2020</p>
+            </div>
+        </a>
+        </div>
+
+
+
+
     </div>
+    </div>
+    <div class="clear"></div>
 
     방구
 </div>
