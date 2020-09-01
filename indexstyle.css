@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.wrap{
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+
+}
+.center {
+    background-image: url("img/1sa22.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+}
+.con{
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1960px;
+}
+.con1{
+    padding-top: 0px;
+    width: 1120px;
+
+    position:absolute;
+    left:50%;
+    margin-left:-565px;
+}
+.con1>div{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.thumbnail{
+    width: 550px;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+}
+.thumbnail:hove{
+    width: 550px;
+    height: 380px;
+    opacity: 0.8;
+    background-position: center;
+    background-color: #000;
+}
+
+.dark{
+    width: inherit;
+    height: 480px;
+    background-color: #000000;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.dark:hover{
+    opacity: 0.4;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.con1_1 .thumbnail{
+    background-image: url("img/thumbnail/1.jpg");
+}
+.con1_2 .thumbnail{
+    background-image: url("img/thumbnail/2.jpg");
+}
+.con1_3 .thumbnail{
+    background-image: url("img/thumbnail/3.jpg");
+}
+.con1_4 .thumbnail{
+    background-image: url("img/thumbnail/4.jpg");
+}
+.con1_5 .thumbnail{
+    background-image: url("img/thumbnail/5.jpg");
+}
+.con1_6 .thumbnail{
+    background-image: url("img/thumbnail/6.jpg");
+}
+.con1_7 .thumbnail{
+    background-image: url("img/thumbnail/7.jpg");
+}
+.caption{
+    height: 100px;
+    width: 550px;
+    background-color: rgba(0, 0, 0, 0.53);
+    text-align: center;
+    padding-top: 3px;
+    box-sizing: border-box;
+
+}
+.caption p:nth-child(2){
+    margin-top: -18px;
+    color: #aaaaaa;
+    font-size: 12pt;
+}
+.caption p:nth-child(1){
+
+    font-size: 14pt;
+    font-weight: 700;
+}
