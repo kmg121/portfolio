@@ -195,39 +195,7 @@
 
 </div>
 
-<SCRIPT>
-    $(window).ready(function(){
 
-        var max = 1000;
-
-        $(window).scroll(function(){
-
-            var scrollPX = $(this).scrollTop();
-
-            if( scrollPX  < max ) {
-
-                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
-
-            }else{
-
-                $(".gnb_bg").css({"opacity": 1});
-
-            }
-
-        });
-
-    });
-
-
-
-    $('a').click(function () {
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 400);
-        return false;
-    });
-
-</SCRIPT>
 
 <div class="wrap">
 
@@ -312,6 +280,38 @@
 
     방구
 </div>
+<SCRIPT>
+    $(window).ready(function(){
 
+        var max = 1000;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+
+
+
+    $('a').click(function () {
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+        return false;
+    });
+
+</SCRIPT>
 </body>
 </html>
