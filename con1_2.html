@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
+    <title>1!SENSITIVE</title>
+    <link rel="stylesheet" href="initial.css" type="text/css">
+    <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+    <style>
+        .wrap{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .con{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 4100px;
+        }
+        .con>.h3{
+            text-align: center;
+            padding-top: 100px;
+        }
+        .bigcon{
+            width: 1120px;
+            margin-left: -565px;
+            margin-top: 80px;
+            left: 50%;
+            position: absolute;
+        }
+        .cap{
+            font-size: 12pt;
+            line-height: 24pt;
+            margin-left: 10px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .main{
+            width: 1110px;
+            margin-left: 10px;
+        }
+        .mins{
+            margin-top: 100px;
+            margin-bottom: 0;
+
+        }
+        .mincon{
+            width: 550px;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-bottom: 0;
+            float: left;
+        }
+        .mincon img{
+            width: inherit;
+        }
+        .mincon_cap p{
+            width: inherit;
+            display: block;
+            line-height: 24pt;
+        }
+        .mincon_cap{
+            width: 500px;
+            margin-left: 35px;
+            margin-top: 10px;
+            float: left;
+            line-height: 24pt;
+
+        }
+
+        .mincon4{
+            width: 1110px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="gnb">
+
+    <ul>
+        <li>
+            <a href="index.html" class="work">WORK</a>
+        </li>
+
+        <li>
+            <a href="info.html">INFO</a>
+        </li>
+
+        <div class="logo">1!SENSITIVE</div>
+
+    </ul>
+    <div class="gnb_bg">
+    </div>
+
+</div>
+
+
+<div class="wrap">
+
+    <div class="con">
+        <div class="h3"><h3>[Promotion Design]</h3>
+            <p>Jukdo beach, Yangyang promotion design<br>Team Project</p>
+        </div>
+
+        <div class="bigcon">
+            <img src="img/con1_2_1.jpg" class="main">
+            <div class="cap">
+                <h2>Jukdo beach, Yangyang promotion design</h2>
+                <p>팀 / 공모전 제출</p>
+                <p>2인 1팀 / 참여율 50% / 국제커뮤니케이션 디자인 공모전 입선</p>
+                <p>강원도 양양에 위치한 죽도해변을 주제로 프로모션 디자인.</p>
+            </div>
+            <div class="mins">
+            <div class="mincon"><img src="img/con1_2_min2.jpg" alt=""></div>
+            <div class="mincon"><img src="img/con1_2_min1.jpg" alt=""></div>
+
+            <div class="clear"></div>
+                <div class="mincon"><img src="img/con1_2_min3.jpg" alt=""></div>
+            <div class="mincon_cap"><p>대중들에게 서핑이 편하게 접할 수 있는 즐거운 스포츠라는 인식을 주고자 강원도 양양에 위치한 죽도해변을 중심으로 서핑의 즐거움을 그래픽으로 표현해 포스터와 여러 애플리케이션을 제작하였다.</p>
+                <p>로고를 여러 가지로 스케치하고 그 스케치들을 각 어플리케이션의 크기와 쓰임에 맞춰 그래픽으로 발전시켜나가는 방식으로 진행하였다.</p>
+                <p>서핑의 즐거움을 나타내는 데에 실사 사진이 주는 강력한 느낌을 이용하고자 실사사진과 타이포를 합성하는 방식으로 포스터를 작업하였고, 하루하루가 서핑하는 날이라는 메시지를 담고자 시간대에 따라 달라지는 바다의 모습을 포스터에 담았다.</p>
+                <p>처음으로 해본 팀 작업이었는데 피드백을 실시간으로 바로바로 주고받을 수 있다는 점, 한 명에게 부족한 점을 다른 한 명이 채울 수 있다는 점, 특히 부족한 점을 알 수 있다는 점이 인상 깊었다.</p>
+            </div>
+
+            </div>
+
+
+                <img src="img/con1_2_min4.jpg" alt="" class="mincon4">
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by 1!SENSITIVE<br><br>
+        rhkralsrb121@nate.com
+    </div>
+</div>
+
+
+
+
+<SCRIPT>
+    $(window).ready(function(){
+
+        var max = 200;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+</SCRIPT>
+</body>
+</html>

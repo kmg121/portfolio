@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
+    <title>1!SENSITIVE</title>
+    <link rel="stylesheet" href="initial.css" type="text/css">
+    <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+    <style>
+        .wrap{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .con{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 1150px;
+        }
+        .con>.h3{
+            text-align: center;
+            padding-top: 100px;
+        }
+        .bigcon{
+            width: 1120px;
+            margin-left: -565px;
+            margin-top: 80px;
+            left: 50%;
+            position: absolute;
+        }
+        .bigcon iframe{
+            margin-left: 15px;
+        }
+        .cap{
+            font-size: 12pt;
+            line-height: 24pt;
+            margin-left: 10px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="gnb">
+
+    <ul>
+        <li>
+            <a href="index.html" class="work">WORK</a>
+        </li>
+
+        <li>
+            <a href="info.html">INFO</a>
+        </li>
+
+        <div class="logo">1!SENSITIVE</div>
+
+    </ul>
+    <div class="gnb_bg">
+    </div>
+
+</div>
+
+
+<div class="wrap">
+
+    <div class="con">
+        <div class="h3"><h3>[UX / UI Design]</h3>
+                <p>Ottogi website redesign</p>
+        </div>
+
+        <div class="bigcon">
+            <iframe width="1100px" height="618.75px" src="https://www.youtube.com/embed/Xh8U6EKTjrU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <div class="cap">
+            <h2>Ottogi website redesign</h2>
+            <p>개인 / 공모전 제츌</p>
+            <p>국제커뮤니케이션 디자인 공모전 특선</p>
+            <p>오뚜기 모바일 웹사이트 리디자인 제안.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by 1!SENSITIVE<br><br>
+        rhkralsrb121@nate.com
+    </div>
+</div>
+
+
+
+
+<SCRIPT>
+    $(window).ready(function(){
+
+        var max = 200;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
+    <title>1!SENSITIVE</title>
+    <link rel="stylesheet" href="initial.css" type="text/css">
+    <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+    <style>
+        .wrap{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .con{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 3800px;
+        }
+        .con>.h3{
+            text-align: center;
+            padding-top: 100px;
+        }
+        .bigcon{
+            width: 1120px;
+            margin-left: -565px;
+            margin-top: 80px;
+            left: 50%;
+            position: absolute;
+        }
+        .cap{
+            font-size: 12pt;
+            line-height: 24pt;
+            margin-left: 10px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .main{
+            width: 1110px;
+            margin-left: 10px;
+        }
+        .mins{
+            margin-top: 100px;
+            margin-bottom: 0;
+
+        }
+        .mincon{
+            width: 550px;
+            margin-left: 10px;
+            margin-top: 10px;
+            padding-bottom: 0;
+            float: left;
+        }
+        .mincon img{
+            width: inherit;
+        }
+        .mincon_cap p{
+            width: inherit;
+            display: block;
+            line-height: 24pt;
+        }
+        .mincon_cap{
+            width: 500px;
+            margin-left: 30px;
+            margin-top: 10px;
+            float: left;
+            line-height: 24pt;
+            margin-right: 30px;
+
+        }
+
+        .mincon4{
+            width: 1110px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        #mincon1{
+            background-image: url(img/con1_3_min2.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            width: 550px;
+            height: 366.66px;
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="gnb">
+
+    <ul>
+        <li>
+            <a href="index.html" class="work">WORK</a>
+        </li>
+
+        <li>
+            <a href="info.html">INFO</a>
+        </li>
+
+        <div class="logo">1!SENSITIVE</div>
+
+    </ul>
+    <div class="gnb_bg">
+    </div>
+
+</div>
+
+
+<div class="wrap">
+
+    <div class="con">
+        <div class="h3"><h3>[Editorial]</h3>
+            <p>Josef Müller-Brockmann</p>
+        </div>
+
+        <div class="bigcon">
+            <img src="img/con1_3.jpg" class="main">
+            <div class="cap">
+                <h2>Josef Müller-Brockmann</h2>
+                <p>개인 / 과제물</p>
+                <p>20세기의 스위스 디자이너인 Josef Müller-Brockmann를 주제로 8p 책자와 포스터 작업.</p>
+            </div>
+            <div class="mins">
+                <div class="mincon_cap"><p>Josef Müller-Brockmann의 「New Graphic Design(오른쪽 사진)」 발행은 스위스 디자인을 국제 디자인 스타일로 평가받게 하는 데 중요한 역할을 하였다. 비대칭적 균형, 이미지와 글자를 포함한 여백의 공간, 그리고 4개의 세로 단으로 된 그리드의 엄격한 적용이 특징인 「New Graphic Design」을 참고하고, 재해석하였다.</p>
+                    <p>책자의 표지와 포스터는 Josef Müller-Brockmann의 대표적 작품 중 하나인 musica viva의 오브제를 평면, 공간에 재배치하고, 스위스 디자인의 큰 특징인 산세리프 서체를 이용하여 작업하였다.</p>
+                </div>
+                <div class="mincon"><img src="img/con1_3_min1.jpg" alt=""></div>
+                <div class="clear"></div>
+                <div class="mincon" id="mincon1"> </div>
+
+
+                <div class="mincon"><img src="img/con1_3_min3.jpg" alt=""></div>
+
+
+            </div>
+
+
+            <img src="img/con1_3_min4.jpg" alt="" class="mincon4">
+            <img src="img/con1_3_min5.jpg" alt="" class="mincon4">
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by 1!SENSITIVE<br><br>
+        rhkralsrb121@nate.com
+    </div>
+</div>
+
+
+
+
+<SCRIPT>
+    $(window).ready(function(){
+
+        var max = 200;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
+    <title>1!SENSITIVE</title>
+    <link rel="stylesheet" href="initial.css" type="text/css">
+    <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+    <style>
+        .wrap{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100%;
+        }
+        .con{
+            background-image: url("img/bg.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            height: 1450px;
+        }
+        .con>.h3{
+            text-align: center;
+            padding-top: 100px;
+        }
+        .bigcon{
+            width: 1120px;
+            margin-left: -565px;
+            margin-top: 80px;
+            left: 50%;
+            position: absolute;
+        }
+        .bigcon iframe{
+            margin-left: 15px;
+        }
+        .cap{
+            font-size: 12pt;
+            line-height: 24pt;
+            margin-left: 10px;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 60px;
+        }
+        .capcap{
+            margin-left: -400px;
+            text-align: left;
+            width: 800px;
+            position: absolute;
+            left: 50%;
+            line-height: 24pt;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="gnb">
+
+    <ul>
+        <li>
+            <a href="index.html" class="work">WORK</a>
+        </li>
+
+        <li>
+            <a href="info.html">INFO</a>
+        </li>
+
+        <div class="logo">1!SENSITIVE</div>
+
+    </ul>
+    <div class="gnb_bg">
+    </div>
+
+</div>
+
+
+<div class="wrap">
+
+    <div class="con">
+        <div class="h3"><h3>[YouTube content]</h3>
+            <p>Where does the assignment come from</p>
+        </div>
+
+        <div class="bigcon">
+            <iframe width="1100px" height="618.75px" src="https://www.youtube.com/embed/6AI7sRR7kD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <div class="cap">
+                <h2>Where does the assignment come from</h2>
+                <p>개인 / 과제물</p>
+                <p>'과제는 어디에서 오는가'를 주제로 Fake documentary형식의 영상 제작.</p>
+                <br><br>
+                <br>
+                <div class="capcap">
+                    <p>현실을 담아내는 '다큐멘터리에 '이질적인 뜻을 가진 단어 페이크를 붙여 만들어진 페이크 다큐멘터리는 사실감과 몰입감을 높이기 위해 다큐멘터리 촬영기법과 전개 방식들을 주로 활용한다.</p>
+                    <p>과제는 어디에서 오는가, 소주의 기원, 생수의 위험성과 같은 엉뚱한 주제를 페이크다큐형식의 시리즈로 만들고자 하였다. 페이크다큐라는 장르를 선택한 이유는 엉뚱한 주제의 사실들을 여러 분야의 지식을 통해 나름의 개연성을 부여하는 과정에서 재미를 느꼈기 때문이다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Powered by 1!SENSITIVE<br><br>
+        rhkralsrb121@nate.com
+    </div>
+</div>
+
+
+
+
+<SCRIPT>
+    $(window).ready(function(){
+
+        var max = 200;
+
+        $(window).scroll(function(){
+
+            var scrollPX = $(this).scrollTop();
+
+            if( scrollPX  < max ) {
+
+                $(".gnb_bg").css({"opacity": 1-(max-scrollPX)/max });
+
+            }else{
+
+                $(".gnb_bg").css({"opacity": 1});
+
+            }
+
+        });
+
+    });
+</SCRIPT>
+</body>
+</html>
