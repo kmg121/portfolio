@@ -2,12 +2,66 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
     <title>1!SENSITIVE</title>
     <link rel="stylesheet" href="initial.css" type="text/css">
     <link rel="stylesheet" href="indexstyle.css" type="text/css">
     <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
+    <style>
+        @media ( max-width: 767px ) {
+            .gnb li:nth-child(2){
+                float: right;
+                margin-right: 6vw;
+            }
+            .gnb li:nth-child(1){
+                margin-left: -4vw;
+            }
+
+
+            .wrap{
+                background-image: url("img/mobile_bg.jpg");
+                height: calc( 100vh + 3510px );
+                width: 100%;
+            }
+            .con{
+                height: 3010px;
+                background-image: url("img/mobile_bg.jpg");
+
+            }
+            .center {
+                background-image: url("img/mobile_center1.png");
+                background-size: cover;
+            }
+            .con1{
+                width: 300px;
+                margin-left: -160px;
+                height: 3510px;
+            }
+            .con1>div{
+                margin-bottom: 20px ;
+            }
+            .thumbnail{
+                width: 300px;
+                height: 300px;}
+            .thumbnail:hove{
+                width: 300px;
+                height: 300px;
+            }
+            .caption{
+                width: 300px;
+                height: 110px;
+            }
+
+            .dark{
+                height: 410px;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
 <div class="gnb">

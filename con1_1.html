@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
     <title>1!SENSITIVE</title>
@@ -41,6 +43,46 @@
             color: #ffffff;
             text-align: center;
             margin-top: 60px;
+        }
+        @media ( max-width: 767px ) {
+            .gnb li:nth-child(2){
+                float: right;
+                margin-right: 6vw;
+            }
+            .gnb li:nth-child(1){
+                margin-left: -4vw;
+            }
+
+
+            .wrap{
+                background-image: url("img/mobile_bg.jpg");
+                height: 1300px;
+                width: 100%;
+            }
+            .con{
+                height: 800px;
+                background-image: url("img/mobile_bg.jpg");
+
+            }
+            .con1>div{
+                margin-bottom: 20px ;
+            }
+            .bigcon{
+                left: 0;
+                margin-left: 0;
+                width: 100vw;
+            }
+
+            .bigcon iframe{
+                width: 100vw;
+                height: 56.3vw;
+                margin-left: 0;
+
+            }
+            .cap{
+                width: 90vw;
+                margin-left: 8vw;
+            }
         }
 
     </style>
