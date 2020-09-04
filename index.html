@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="indexstyle.css" type="text/css">
     <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
     <style>
+        html, body {-webkit-overflow-scrolling:touch !important;  overflow: auto !important;  height: 100% !important; /* ios fixed 버그용 */ }
+
         @media ( max-width: 767px ) {
             .gnb li:nth-child(2){
                 float: right;
@@ -27,7 +29,6 @@
                 width: 100%;
                 background-attachment: fixed;
                 z-index: -10;
-                background-size: 100% 100vh;
 
             }
             .con{
@@ -35,14 +36,12 @@
                 background-image: url("img/mobile_bg.jpg");
                 background-attachment: fixed;
                 z-index: -10;
-                background-size: 100% 100vh;
 
 
             }
             .center {
                 background-image: url("img/mobile_center1.png");
                 background-attachment: scroll;
-                background-size: 100% 100vh;
 
             }
             .con1{
