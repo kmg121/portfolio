@@ -5,6 +5,8 @@
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
+    transform: scale(1.1, 1.1);
+
 }
 .center {
     background-image: url("img/1sa22.png");
@@ -13,6 +15,8 @@
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
+    transform: scale(1.1, 1.1);
+
 
 }
 .con{
@@ -20,6 +24,8 @@
     background-size: cover;
     background-attachment: fixed;
     height: 1960px;
+    transform: scale(1.1, 1.1);
+
 }
 .con1{
     padding-top: 0px;
