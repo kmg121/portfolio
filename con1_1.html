@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="initial.css" type="text/css">
     <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
     <style>
-        .wrap{
+        .bg{
             background-image: url("img/bg.jpg");
             background-size: cover;
-            background-attachment: fixed;
+            position: fixed;
             height: 100%;
+            width: 100%;
+            z-index: -10;
+        }
+        .wrap{
+
         }
         .con{
             background-image: url("img/bg.jpg");
@@ -45,19 +50,21 @@
             margin-top: 60px;
         }
         @media ( max-width: 767px ) {
-            .gnb li:nth-child(2){
-                float: right;
-                margin-right: 10vw;
+            .gnb li{
+                margin-left: -4vw;
             }
-            .gnb li:nth-child(1){
+            .logo{
                 margin-left: -4vw;
             }
 
 
+            .bg{
+                background-image: url(img/mobile_bg.jpg);
+            }
+
+
             .wrap{
-                background-image: url("img/mobile_bg.jpg");
-                height: 1300px;
-                width: 100%;
+
             }
             .con{
                 height: 800px;
@@ -109,7 +116,7 @@
 
 </div>
 
-
+<div class="bg"> </div>
 <div class="wrap">
 
     <div class="con">

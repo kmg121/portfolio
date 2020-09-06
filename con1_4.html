@@ -2,17 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700;900&display=swap" rel="stylesheet">
     <title>1!SENSITIVE</title>
     <link rel="stylesheet" href="initial.css" type="text/css">
     <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
     <style>
-        .wrap{
+        .bg{
             background-image: url("img/bg.jpg");
             background-size: cover;
-            background-attachment: fixed;
+            position: fixed;
             height: 100%;
+            width: 100%;
+            z-index: -10;
+        }
+        .wrap{
+
         }
         .con{
             background-image: url("img/bg.jpg");
@@ -50,6 +57,55 @@
             left: 50%;
             line-height: 24pt;
         }
+
+        @media ( max-width: 767px ) {
+            .gnb li{
+                margin-left: -4vw;
+            }
+            .logo{
+                margin-left: -4vw;
+            }
+
+
+            .bg{
+                background-image: url(img/mobile_bg.jpg);
+            }
+
+
+            .wrap{
+
+            }
+            .con{
+                height: ;
+                background-image: url("img/mobile_bg.jpg");
+
+            }
+            .con1>div{
+                margin-bottom: 20px ;
+            }
+            .bigcon{
+                left: 50vw;
+                margin-left: -50vw;
+                width: 100vw;
+            }
+
+            .bigcon iframe{
+                width: 100vw;
+                height: 56.3vw;
+                margin-left: 0;
+
+            }
+            .cap{
+                width: 90vw;
+                margin-left: 5vw;
+            }
+            .capcap{
+                width: 90vw;
+                margin-left: 5vw;
+                position: static;
+            }
+        }
+
     </style>
 
 </head>
@@ -74,7 +130,7 @@
 
 </div>
 
-
+<div class="bg"> </div>
 <div class="wrap">
 
     <div class="con">
@@ -101,6 +157,8 @@
             </div>
         </div>
     </div>
+
+    <div class="clear"></div>
 
     <div class="footer">
         Powered by 1!SENSITIVE<br><br>

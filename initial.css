@@ -37,9 +37,11 @@ body{
     line-height: 14pt;
     margin-right: 40px;
     font-weight: 700;
-
 }
-.gnb a{color: #c5c5c5;            transition: all 0.2s ease-in-out;
+
+
+.gnb a{color: #c5c5c5;
+    transition: all 0.2s ease-in-out;
 }
 .gnb a:hover{
     color: #ffffff;
@@ -57,7 +59,6 @@ body{
     font-size: 16pt;
     text-align: center;
     margin-right: 0;
-
 }
 .clear{
     clear: both;}
