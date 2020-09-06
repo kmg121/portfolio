@@ -11,15 +11,18 @@
     <link rel="shortcut icon" type="image⁄x-icon" href="img/favicon.png">
     <style>
 
-
-        .wrap{
-            background-image: url("img/info_bg.jpg");
+        .bg{
+            background-image: url("img/bg.jpg");
             background-size: cover;
-            background-attachment: fixed;
+            position: fixed;
             height: 100%;
+            width: 100%;
+            z-index: -10;
+        }
+        .wrap{
+
         }
         .con{
-            background-image: url("img/info_bg.jpg");
             background-size: cover;
             background-attachment: fixed;
             height: 1300px;
@@ -63,18 +66,12 @@
             .gnb li:nth-child(1){
                 margin-left: -4vw;
             }
-            .fixbg{
-                width: 100vw;
-                height: 100vh;
-                background-image: url(img/mobile_info_bg.jpg);
-                position: fixed;
-                background-attachment: cover;
-            }
+            .bg{
+            background-image: url(img/mobile_info_bg.jpg);
+        }
+
 
             .wrap{
-                background-image: url("");
-                height: 2300px;
-                width: 100%;
 
             }
             .con{
@@ -107,6 +104,9 @@
                 margin-left: 8vw;
                 font-size: 1em;
             }
+            .footer{
+
+            }
         }
 
 
@@ -132,8 +132,8 @@
     </div>
 
 </div>
+<div class="bg"> </div>
 
-<div class="fixbg"> </div>
 <div class="wrap">
 
     <div class="con">
@@ -177,7 +177,6 @@
 <div class="footer">
     Powered by 1!SENSITIVE<br><br>
     rhkralsrb121@nate.com
-</div>
 </div>
 <SCRIPT>
     $(window).ready(function(){
